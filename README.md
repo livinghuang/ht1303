@@ -7,7 +7,7 @@ make clean all
 
 
 
-SX1302_RESET_PIN=17   # SX1302 reset
+
 
 
 How to auto-start the with systemd
@@ -25,10 +25,21 @@ sudo cp lora_pkt_fwd.service /etc/systemd/system
 
 ```console
 git clone https://github.com/livinghuang/ht1303.git
+cd ht1303/
 tar -xvf sx130x_hal.tar
 cd sx130x_hal/
 make clean all
-nano /packet_forwarder/reset_lgw.sh
+cd packet_forwarder/
+nano reset_lgw.sh
+```
+
+to set the reset pin base the convert board and ht1303 module
+in the converter board do not use power control. it also could mark 
+```nano reset_lgw.sh
+SX1302_RESET_PIN=17   # SX1302 reset
+```
+
+
 cd tools/
 cd systemd/
 sudo cp lora_pkt_fwd.conf /etc/rsyslog.d
