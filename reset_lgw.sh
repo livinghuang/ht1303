@@ -37,9 +37,9 @@ init() {
 
 reset() {
     echo "CoreCell reset through GPIO$SX1302_RESET_PIN..."
-    echo "SX1261 reset through GPIO$SX1302_RESET_PIN..."
-    echo "CoreCell power enable through GPIO$SX1302_POWER_EN_PIN..."
-    echo "CoreCell ADC reset through GPIO$AD5338R_RESET_PIN..."
+    # echo "SX1261 reset through GPIO$SX1302_RESET_PIN..."
+    # echo "CoreCell power enable through GPIO$SX1302_POWER_EN_PIN..."
+    # echo "CoreCell ADC reset through GPIO$AD5338R_RESET_PIN..."
 
     # write output for SX1302 CoreCell power_enable and reset
     # echo "1" > /sys/class/gpio/gpio$SX1302_POWER_EN_PIN/value; WAIT_GPIO
