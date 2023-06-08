@@ -67,7 +67,7 @@ LoRa 集中器是 LoRaWAN 網路中的關鍵元件，用於與多個 LoRa 設備
 
 在此目錄中，您可以找到多個 `configure.json` 檔案。這些是由 Lora-net（Semtech 官方專案）為各個區域頻率設定的範例。我們已經在儲存庫中提供了一個 `global_conf.json` 檔案，該檔案適用於台灣區域。您可以使用以下命令檢查該檔案：
    ```
-   cat ~/ht1303/global.conf
+   cat ~/ht1303/global_conf.json
    ```
 
 7. 將可執行檔複製到使用者家目錄下的 `ht1303` 目錄：
